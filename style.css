@@ -10,6 +10,7 @@ body {
     color: var(--text);
     background: var(--background);
     font-family: "Notable";
+    font-style: italic;
 }
 
 h1,
@@ -17,10 +18,14 @@ h2,
 h3 {
     color: var(--primary);
     font-family: "Gravitas one";
+    font-weight: bold;
+    font-size: x-large;
 }
 
 p {
     background: var(--accent);
+    text-decoration: underline;
+    text-decoration: initial;
 }
 
 li:marker {
