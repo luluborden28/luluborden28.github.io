@@ -6,6 +6,10 @@ html {
     --accent: #823583;
 }
 
+* {
+    /* border: 1 px solid red;  */
+}
+
 body {
     color: var(--text);
     background: var(--background);
@@ -20,16 +24,25 @@ h3 {
     font-family: "Gravitas one";
     font-weight: bold;
     font-size: x-large;
+    border: 6px solid white;
+    padding-top: 6px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-bottom: 6px;
+    margin: 1px;
 }
 
 p {
     background: var(--accent);
     text-decoration: underline;
     text-decoration: initial;
+    border: 2px solid white;
+    margin: 20px;
 }
 
 li:marker {
     color: var(--secondary);
+
 }
 
 img {
@@ -41,4 +54,7 @@ img {
 
 audio {
     background: var(--secondary);
+    border: 3px solid var(--accent);
+    width: 100%;
+    height: 70px;
 }
