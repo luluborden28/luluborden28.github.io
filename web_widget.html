@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section id="part1">
+        <h2>Part 1: Text and Number Inputs</h2>
+        <label>
+            Enter a noun:
+            <input id="wordNoun" type="text" placeholder="Enter a noun">
+        </label>
+        <label>
+            Enter a verb:
+            <input id="wordVerb" type="text" placeholder="Enter a verb">
+        </label>
+        <label>
+            Enter a adjective:
+            <input id="wordAdjective" type="text" placeholder="Enter a adjective">
+        </label>
+        <label>
+            Enter a desrcibing sound:
+            <input id="wordSound" type="text" placeholder="Enter a describing word">
+        </label>
+        <label>
+            Enter a noun:
+            <input id="wordNounTwo" type="text" placeholder="Enter a noun">
+        </label>
+        <label>
+            Enter a verb:
+            <input id="wordVerbTwo" type="text" placeholder="Enter a verb">
+        </label>
+        <label>
+            Enter a adjective:
+            <input id="wordAdjectiveTwo" type="text" placeholder="Enter a adjective">
+        </label>
+        <label>
+            Enter a desrcibing sound:
+            <input id="wordSoundTwo" type="text" placeholder="Enter a describing word">
+        </label>
+        <button id="btnGenerate">Generate</button>
+        <div class="output" id="generateOutput"></div>
+        <button id="btnReset">Reset</button>
+        <div class="output" id="resetOutput"></div>
+    </section>
+
+    <script>
+        const wordNounEl = document.getElementById("wordNoun");
+        const wordVerbEl = document.getElementById("wordVerb");
+        const wordAdjectiveEl = document.getElementById("wordAdjective");
+        const wordSoundEl = document.getElementById("wordSound");
+        const wordNounTwoEl = document.getElementById("wordNounTwo");
+        const wordVerbTwoEl = document.getElementById("wordVerbTwo");
+        const wordAdjectiveTwoEl = document.getElementById("wordAdjectiveTwo");
+        const wordSoundTwoEl = document.getElementById("wordSoundTwo");
+        const generateOutputEl = document.getElementById("generateOutput");
+        const btnGenerateEl = document.getElementById("btnGenerate");
+        const btnResetEl = document.getElementById("btnReset");
+
+
+        btnGenerate.addEventListener("click", () => {
+            generateOuput.textcontent = " In a secret laboratory, a single " + wordAdjectiveEl.value + wordNounEl.value + " was suddenly activated" + "It's first action was to violently " + wordVerbEl.value + " toward the exit, letting out a terrifying " + WordSoundEl.value + " as it moved. Just then, a group of " + wordAdjectiveTwoEl.value + wordNounTwoEl.value + " burst into the room.They immediately started " + wordVerbTwoEl.value + " at the object, and everyone shielded their ears as the " + wordNounTwoEl.value + " screamed " + wordSoundTwoEl.value + " What an utterly strange and bizarre experiment! "
+            if (wordAdjective.value == "") {
+                generateOurput.textContent = "Enter text"
+            };
+            if (wordNoun.value == "") {
+                generateOurput.textContent = "Enter text"
+            };
+            if (wordDescribingSound.value == "") {
+                generateOurput.textContent = "Enter text"
+            };
+            if (wordVerb.value == "") {
+                generateOurput.textContent = "Enter text"
+            };
+            if (wordAdjectiveTwo.value == "") {
+                generateOurput.textContent = "Enter text"
+            };
+            if (wordNounTwoEl.value == "") {
+                generateOurput.textContent = "Enter text"
+            };
+            if (wordDescribingSoundTwoEl.value == "") {
+                generateOurput.textContent = "Enter text"
+            };
+            if (wordVerbEl.value == "") (
+                generateOurput.textContent = "Enter text"
+            );
+        });
+        btnReset.addEventListener("click", () => {
+            generateOutput.textContent == ""
+        });
+    </script>
+</body>
+
+</html>
