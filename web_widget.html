@@ -63,35 +63,35 @@
         const btnResetEl = document.getElementById("btnReset");
 
 
-        btnGenerate.addEventListener("click", () => {
-            generateOuput.textcontent = " In a secret laboratory, a single " + wordAdjectiveEl.value + wordNounEl.value + " was suddenly activated" + "It's first action was to violently " + wordVerbEl.value + " toward the exit, letting out a terrifying " + WordSoundEl.value + " as it moved. Just then, a group of " + wordAdjectiveTwoEl.value + wordNounTwoEl.value + " burst into the room.They immediately started " + wordVerbTwoEl.value + " at the object, and everyone shielded their ears as the " + wordNounTwoEl.value + " screamed " + wordSoundTwoEl.value + " What an utterly strange and bizarre experiment! "
-            if (wordAdjective.value == "") {
-                generateOurput.textContent = "Enter text"
+        btnGenerateEl.addEventListener("click", () => {
+            generateOutputEl.textContent = " In a secret laboratory, a single " + wordAdjectiveEl.value + wordNounEl.value + " was suddenly activated" + "It's first action was to violently " + wordVerbEl.value + " toward the exit, letting out a terrifying " + wordSoundEl.value + " as it moved. Just then, a group of " + wordAdjectiveTwoEl.value + wordNounTwoEl.value + " burst into the room.They immediately started " + wordVerbTwoEl.value + " at the object, and everyone shielded their ears as the " + wordNounTwoEl.value + " screamed " + wordSoundTwoEl.value + " What an utterly strange and bizarre experiment! "
+            if (wordAdjectiveEl.value == "") {
+                generateOutputEl.textContent = "Enter text"
             };
-            if (wordNoun.value == "") {
-                generateOurput.textContent = "Enter text"
+            if (wordNounEl.value == "") {
+                generateOutputEl.textContent = "Enter text"
             };
-            if (wordDescribingSound.value == "") {
-                generateOurput.textContent = "Enter text"
+            if (wordSoundEl.value == "") {
+                generateOutputEl.textContent = "Enter text"
             };
-            if (wordVerb.value == "") {
-                generateOurput.textContent = "Enter text"
+            if (wordVerbEl.value == "") {
+                generateOutputEl.textContent = "Enter text"
             };
-            if (wordAdjectiveTwo.value == "") {
-                generateOurput.textContent = "Enter text"
+            if (wordAdjectiveTwoEl.value == "") {
+                generateOutputEl.textContent = "Enter text"
             };
             if (wordNounTwoEl.value == "") {
-                generateOurput.textContent = "Enter text"
+                generateOutputEl.textContent = "Enter text"
             };
-            if (wordDescribingSoundTwoEl.value == "") {
-                generateOurput.textContent = "Enter text"
+            if (wordSoundTwoEl.value == "") {
+                generateOutputEl.textContent = "Enter text"
             };
             if (wordVerbEl.value == "") (
-                generateOurput.textContent = "Enter text"
+                generateOutputEl.textContent = "Enter text"
             );
         });
-        btnReset.addEventListener("click", () => {
-            generateOutput.textContent == ""
+        btnResetEl.addEventListener("click", () => {
+            generateOutputEl.textContent == ""
         });
     </script>
 </body>
