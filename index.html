@@ -14,22 +14,33 @@
 </head>
 <body>
   <h1>Lulus Personal Website</h1>
-   <a href="class_links.html">Class Links</a>
-
-   <a href="balloon_game.html">Balloon Game</a>
-  
-  <h3>Family</h3>
-  <a href=”Family_page.html”>Family</a>
-  
-  <h3>Friends</h3>
+  <a href="Family_page.html">Family</a>
+<br>  
    <a href="Friends_page.html">Friends</a>
-    
-  <h2>Hobbies</h2>
+<br>    
       <a href="Hobbies_page.html">Hobbies</a>
-      <a href="web_widget.html">Web Widget</a>
-  
-    
-  <a href="https://google.com">Link to Google</a>
-  <img src="/lax.webp" alt="An image of two lax players.">
-    <audio controls src="BeepBox-Song.wav"></audio> </body>
+<br>      
+      <a href="web_widget.html">Fun Game: Mad Libs!</a>
+      <br>
+      <h1>Balloon Game!</h1>
+    <p>Press the up arrow to make the balloon bigger, and press the down arrow to make the balloon smaller.</p>
+    <p id="balloon">🎈</p>
+
+    <script>
+        let balloonEl = document.getElementById("balloon")
+        let fontSize = 10;
+        function handleKeyDown(event) {
+            if (event.key == "ArrowUp") {
+                fontSize *= 1.1;
+                balloonEl.style.fontSize = fontSize + "px";
+                event.preventDefault();
+            }
+            if (event.key == "ArrowDown") {
+                fontSize /= 1.1;
+                balloonEl.style.fontSize = fontSize + "px";
+                event.preventDefault();
+            }
+        }
+        window.addEventListener("keydown", handleKeyDown);
+    </script>   
 </html>
