@@ -18,7 +18,12 @@
 <body>
 
     <section id="part1">
-        <h2>Part 1: Text and Number Inputs</h2>
+        <h2>Mad Libs</h2>
+        <br>
+         <label>
+            Background Color:
+            <input id="colorInput" type="color" value="#00AAFF">
+        </label>
         <br>
         <label>
             Enter a noun:
@@ -110,6 +115,11 @@
         btnResetEl.addEventListener("click", () => {
             generateOutputEl.textContent == ""
         });
+        const colorInput = document.getElementById("colorInput");
+        colorInput.addEventListener("input", () => {
+            document.body.style.background=colorInput.value
+        });
+
     </script>
 </body>
 
